@@ -17,14 +17,31 @@ h2 {
     font-family: khula, sans-serif;
 }
 
+.weather-well {
+    border-style: solid;
+    border-width: thin;
+    padding: 2px;
+    width: 100px;
+}
+
 .wx-header {
     font-family: Cinzel;
     font-size: 0.7em;
+    text-align: center;
 }
+
+.wx-footer {
+    min-height: 10px;
+    font-family: Cinzel;
+    font-size: 0.7em;
+    text-align: center;
+    height: 0.8em
+}
+
 
 .wx-reading {
     font-family: Cinzel;
-    font-size: 4em;
+    font-size: 2.2em;
     text-align: center;
     font-weight: 500;
 }
