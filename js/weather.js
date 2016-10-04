@@ -79,7 +79,7 @@ function getLiveRain() {
 
      $("div.wx-reading-rainfall").text(rain+"\"")
 
-     setTimeout(getLiveRain, 3000);
+     setTimeout(getLiveRain, 20000);
  });
 }
 
