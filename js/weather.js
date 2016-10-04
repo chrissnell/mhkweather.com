@@ -67,13 +67,10 @@ function getLiveWeather() {
 }
 
 function getLiveRain() {
-    var wxgateway = 'https://home.chrissnell.com:7000/last-hour-rain';
+    var wxgateway = 'https://home.chrissnell.com:7000/last-day-rain';
 
     $.getJSON(wxgateway, {
      }).done(function(data) {
-
-     //console.log(data)
-     console.log(data['results'][0]['series'][0]['values'][0][1])
 
      rain = round(data['results'][0]['series'][0]['values'][0][1],2)
 
