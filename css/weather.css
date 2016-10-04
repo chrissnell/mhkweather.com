@@ -1,0 +1,165 @@
+@font-face {
+    font-family: cinzel;
+    src: url(/fonts/Cinzel-Regular.ttf);
+}
+
+@font-face {
+    font-family: khula;
+    src: url(/fonts/Khula-Regular.ttf);
+}
+
+
+h1 {
+    font-family: Cinzel, serif;
+}
+
+h2 {
+    font-family: khula, sans-serif;
+}
+
+.wx-header {
+    font-family: Cinzel;
+    font-size: 0.7em;
+}
+
+.wx-reading {
+    font-family: Cinzel;
+    font-size: 4em;
+    text-align: center;
+    font-weight: 500;
+}
+
+.wx-reading-small-label {
+    font-size: 0.3em;
+}
+.wx-well {
+    margin: 0 0 0 0;
+}
+
+
+.chart_container {
+    position: relative;
+    display: inline-block;
+    margin: 40px 0 50px 0;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    /*margin-top: 20px;*/
+}
+.chart {
+    display: inline-block;
+    left: 50px;
+}
+.y_axis {
+    position: absolute;
+    top: 0;
+    bottom: -5;
+    width: 50px;
+    font-family: khula, sans-serif, !important;
+}
+.axis0 {
+  position: absolute;
+  top: 0;
+  bottom: -5;
+  width: 40px;
+}
+.axis1 {
+  position: absolute;
+  left: 650px;
+  top: 0;
+  bottom: -5;
+  width: 50px;
+}
+.title {
+    font-family: khula, sans-serif;
+}
+.x_tick {
+    bottom: -20px !important;
+}
+.x_label {
+    display: none;
+}
+
+/*.legend {
+    position: absolute;;
+    left: 50px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    color: black;
+    padding-left 5px;
+    text-align: left;
+    font-family: khula, sans-serif;
+    display: inline-block;
+}*/
+
+.rickshaw_legend {
+    font-family: Arial;
+    font-size: 12px;
+    color: black;
+    background: white;
+    display: inline-block;
+    padding: 12px 5px;
+    border-radius: 2px;
+    position: relative;
+    left: 80px;
+}
+.rickshaw_legend:hover {
+    z-index: 10;
+}
+.rickshaw_legend .swatch {
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.rickshaw_legend .line {
+    clear: both;
+    line-height: 140%;
+    padding-right: 15px;
+}
+.rickshaw_legend .line .swatch {
+    display: inline-block;
+    margin-right: 3px;
+    border-radius: 2px;
+}
+.rickshaw_legend .label {
+    white-space: nowrap;
+    display: inline;
+    font-size: inherit;
+    background-color: transparent;
+    color: inherit;
+    font-weight: normal;
+    line-height: normal;
+    padding: 0;
+    text-shadow: none;
+}
+.rickshaw_legend .action:hover {
+    opacity: 0.6;
+}
+.rickshaw_legend .action {
+    margin-right: 0.2em;
+    opacity: 0.2;
+    cursor: pointer;
+    font-size: 14px;
+}
+.rickshaw_legend .line.disabled {
+    opacity: 0.4;
+}
+.rickshaw_legend ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin: 2px;
+    cursor: pointer;
+}
+.rickshaw_legend li {
+    padding: 0 0 0 2px;
+    min-width: 80px;
+    white-space: nowrap;
+}
+.rickshaw_legend li:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 3px;
+}
+.rickshaw_legend li:active {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}

@@ -1,0 +1,112 @@
+<html>
+<head>
+  <title>Manhattan, Kansas :: Live Weather</title>
+    <link href="/css/rickshaw.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="/css/weather.css" media="screen" rel="stylesheet" type="text/css">
+
+    <script src="/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/d3.v3.min.js" type="text/javascript"></script>
+    <script src="/js/rickshaw.min.js" type="text/javascript"></script>
+    <script src="/js/weather.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			<h1>Manhattan, Kansas Live Weather</h1>
+		</div>
+	</div>
+    <div class="row">
+        <div class="col-sm-2 col-lg-2">
+            <div class="well-sm">
+                <div class="wx-header">Temperature</div>
+                <div class="wx-reading wx-reading-temperature">---</div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-lg-2">
+            <div class="well-sm">
+                <div class="wx-header">Humidity</div>
+                <div class="wx-reading wx-reading-humidity">---</div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-lg-2">
+            <div class="well-sm">
+                <div class="wx-header">Barometer</div>
+                <div class="wx-reading wx-reading-barometer">---</div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-lg-2">
+            <div class="well-sm">
+                <div class="wx-header">Wind Speed</div>
+                <div class="wx-reading wx-reading-windspeed">---</div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-lg-2">
+            <div class="well-sm">
+                <div class="wx-header">Wind Direction</div>
+                <div class="wx-reading wx-reading-winddirection">---</div>
+            </div>
+        </div>
+        <div class="col-sm-2 col-lg-2">
+            <div class="well-sm">
+                <div class="wx-header">Rainfall (Last Hour)</div>
+                <div class="wx-reading wx-reading-rainfall">---</div>
+            </div>
+        </div>
+    </div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div id="timeSpan" class="btn-group" data-toggle="buttons">
+				<button type="button" class="btn btn-default" id="span_today">24 hours</button>
+     			<button type="button" class="btn btn-default" id="span_twodays">48 hours</button>
+				<button type="button" class="btn btn-default" id="span_week">Week</button>
+				<button type="button" class="btn btn-default" id="span_month">Month</button>
+				<button type="button" class="btn btn-default" id="span_year">Year</button>
+			</div>
+
+		</div>
+	</div>
+    <div class="row">
+        <div class="col-sm-12">
+			<div id="temp_humid" style="white-space: nowrap;">
+				<div class="chart_container">
+					<div class="axis0"></div>
+					<div class="axis1"></div>
+					<div class="chart"></div>
+				</div>
+				<div class="legend"></div>
+			</div>
+			<div id="barometer" style="white-space: nowrap;">
+				<div class="chart_container">
+					<div class="y_axis"></div>
+					<div class="chart"></div>
+				</div>
+				<div class="legend"></div>
+			</div>
+            <div id="wind_speed" style="white-space: nowrap;">
+                <div class="chart_container">
+                    <div class="y_axis"></div>
+                    <div class="chart"></div>
+                </div>
+                <div class="legend"></div>
+            </div>
+			<div id="wind_dir" style="white-space: nowrap;">
+                <div class="chart_container">
+                    <div class="y_axis"></div>
+                    <div class="chart"></div>
+                </div>
+                <div class="legend"></div>
+			</div>
+			<div id="rainfall" style="white-space: nowrap;">
+                <div class="chart_container">
+                    <div class="y_axis"></div>
+                    <div class="chart"></div>
+                </div>
+                <div class="legend"></div>
+			</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
