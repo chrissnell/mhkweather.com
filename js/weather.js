@@ -121,7 +121,7 @@ function xformData(data, elem, name, color) {
         return {
             name: name,
             data: s.values.map(function(v) {
-                return { x: v[0], y: v[elem] };
+                return { x: v[0], y: round(v[elem],2) };
             }),
             color: color
         };
