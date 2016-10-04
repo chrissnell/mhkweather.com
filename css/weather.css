@@ -17,30 +17,36 @@ h2 {
     font-family: khula, sans-serif;
 }
 
+.center {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .weather-well {
+    display: inline-table;
     border-style: solid;
     border-width: thin;
     padding: 2px;
+    margin-bottom: 40px;
     width: 100px;
 }
 
 .wx-header {
-    font-family: Cinzel;
+    font-family: khula;
     font-size: 0.7em;
     text-align: center;
 }
 
 .wx-footer {
-    min-height: 10px;
-    font-family: Cinzel;
+    font-family: khula;
     font-size: 0.7em;
     text-align: center;
-    height: 0.8em
 }
 
 
 .wx-reading {
-    font-family: Cinzel;
+    font-family: Cinzel, serif;
     font-size: 2.2em;
     text-align: center;
     font-weight: 500;
@@ -95,18 +101,6 @@ h2 {
     display: none;
 }
 
-/*.legend {
-    position: absolute;;
-    left: 50px;
-    margin-left: 10px;
-    margin-bottom: 20px;
-    background-color: #ffffff;
-    color: black;
-    padding-left 5px;
-    text-align: left;
-    font-family: khula, sans-serif;
-    display: inline-block;
-}*/
 
 .rickshaw_legend {
     font-family: Arial;
