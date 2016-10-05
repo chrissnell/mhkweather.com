@@ -127,7 +127,11 @@ function xformData(data, elem, name, color) {
 
 function round(value, precision) {
     var multiplier = Math.pow(10, precision || 0);
+    if (value === null) {
+        return null;
+    } else {
     return Math.round(value * multiplier) / multiplier;
+    }
 }
 
 
